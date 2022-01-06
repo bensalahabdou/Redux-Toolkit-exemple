@@ -7,7 +7,7 @@ import Post from '../posts/post'
 function Posts() {
   const dispatch = useDispatch()
   useEffect(()=> {
-    dispatch(fetchPosts({ limit: 5 }))
+    dispatch(fetchPosts({ limit:  10}))
   },[dispatch])
   const { posts } = useSelector(state => state.posts)
   // console.log(posts)
